@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.PongMenuController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/PongTitle.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="startBtn" layoutX="255.0" layoutY="170.0" mnemonicParsing="false" onAction="#handle" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: white;" text="START">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="20.0" />
+         </font>
+         <effect>
+            <Glow level="0.31" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Button fx:id="backBtn" layoutX="255.0" layoutY="250.0" mnemonicParsing="false" onAction="#handle" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: white;" text="BACK">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="20.0" />
+         </font>
+         <effect>
+            <Glow level="0.31" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" layoutX="405.0" stroke="BLACK" strokeType="INSIDE" width="195.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.5625" startY="0.6298076923076923">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#5d73f58c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" stroke="BLACK" strokeType="INSIDE" width="195.0">
+         <fill>
+            <LinearGradient endX="0.02403846153846154" endY="0.5625" startX="1.0" startY="0.6298076923076923">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#cc5df570" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+   </children>
+</AnchorPane>

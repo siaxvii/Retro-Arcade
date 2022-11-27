@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: palegreen;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.PongNameController">
+   <children>
+      <ImageView fitHeight="100.0" fitWidth="400.0" layoutX="100.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/PongNameTitle.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="p1NameTxt" layoutX="75.0" layoutY="185.0" onAction="#handle" prefHeight="25.0" prefWidth="200.0" promptText="Player 1 Name">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="p2NameTxt" layoutX="325.0" layoutY="185.0" onAction="#handle" prefHeight="25.0" prefWidth="200.0" promptText="Player 2 Name">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font></TextField>
+      <Button alignment="TOP_CENTER" contentDisplay="TOP" layoutX="235.0" layoutY="300.0" mnemonicParsing="false" onAction="#handle" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: skyblue;" text="NEXT" textAlignment="CENTER" textFill="#fffb00" wrapText="true">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="26.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.54" color="#3084e5" height="57.43" radius="37.3225" width="93.86" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="errorTxt" fill="#c31e1e" layoutX="121.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="358.0">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="22.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#21a3cc" height="72.0" layoutX="14.0" layoutY="-29.0" stroke="TRANSPARENT" strokeType="INSIDE" width="81.0">
+         <effect>
+            <Glow level="0.63" />
+         </effect>
+      </Rectangle>
+      <Polyline fill="#47ff69" layoutX="561.0" layoutY="4.0" rotate="-85.6" stroke="WHITE" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="-40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="-40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="60.0" />
+          <Double fx:value="-50.0" />
+          <Double fx:value="-40.0" />
+        </points>
+         <effect>
+            <Glow level="0.63" />
+         </effect>
+      </Polyline>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#365bff" height="48.0" layoutX="-36.0" layoutY="329.0" stroke="TRANSPARENT" strokeType="INSIDE" width="100.0">
+         <effect>
+            <Glow level="0.48" />
+         </effect>
+      </Rectangle>
+      <Ellipse fill="#77ff05" layoutX="491.0" layoutY="377.0" radiusX="26.0" radiusY="24.0" stroke="#7429ff00" strokeType="INSIDE" strokeWidth="10.0">
+         <effect>
+            <Glow level="0.74" />
+         </effect>
+      </Ellipse>
+      <Polyline fill="#c4ff21" layoutX="569.0" layoutY="274.0" rotate="92.1" stroke="#ffffff00" strokeType="INSIDE">
+         <effect>
+            <Glow level="0.76" />
+         </effect>
+         <points>
+            <Double fx:value="-50.0" />
+            <Double fx:value="-40.0" />
+            <Double fx:value="50.0" />
+            <Double fx:value="-40.0" />
+            <Double fx:value="0.0" />
+            <Double fx:value="60.0" />
+            <Double fx:value="-50.0" />
+            <Double fx:value="-40.0" />
+         </points>
+      </Polyline>
+      <Ellipse fill="#ba1eb200" layoutX="41.0" layoutY="372.0" radiusX="54.0" radiusY="54.0" stroke="#f25217" strokeType="INSIDE" strokeWidth="10.0">
+         <effect>
+            <Glow level="0.74" />
+         </effect>
+      </Ellipse>
+      <Ellipse fill="#ba1eb200" layoutX="536.0" layoutY="340.0" radiusX="45.0" radiusY="47.0" stroke="#2be8ff" strokeType="INSIDE" strokeWidth="10.0">
+         <effect>
+            <Glow level="0.74" />
+         </effect>
+      </Ellipse>
+      <Ellipse fill="#ba1eb200" layoutX="581.0" layoutY="372.0" radiusX="54.0" radiusY="68.0" stroke="#ff2bd8" strokeType="INSIDE" strokeWidth="10.0">
+         <effect>
+            <Glow level="0.74" />
+         </effect>
+      </Ellipse>
+      <Ellipse fill="#b81f7500" layoutX="600.0" layoutY="68.0" radiusX="54.0" radiusY="54.0" stroke="#2b2eff" strokeType="INSIDE" strokeWidth="10.0">
+         <effect>
+            <Glow level="0.74" />
+         </effect>
+      </Ellipse>
+      <Polygon fill="#ff487f" layoutX="18.0" layoutY="47.0" stroke="TRANSPARENT" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+         <effect>
+            <Glow level="0.73" />
+         </effect>
+      </Polygon>
+   </children>
+</AnchorPane>

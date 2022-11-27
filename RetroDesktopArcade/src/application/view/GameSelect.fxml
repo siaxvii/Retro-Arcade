@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: palegreen; -fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.GameSelectController">
+   <children>
+      <ImageView fitHeight="78.0" fitWidth="381.0" layoutX="130.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/GameSelectTitle.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="snakeBtn" contentDisplay="TOP" layoutX="60.0" layoutY="160.0" mnemonicParsing="false" onAction="#handle" prefHeight="176.0" prefWidth="210.0" style="-fx-background-color: #75ea4b;" text="SNAKE" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="22.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.3" color="#9eff5d" height="77.16" radius="49.8425" width="124.21" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="115.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/snakecover.png" />
+               </image></ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="pongBtn" contentDisplay="TOP" layoutX="330.0" layoutY="160.0" mnemonicParsing="false" onAction="#handle" prefHeight="176.0" prefWidth="210.0" style="-fx-background-color: #75ea4b;" text="PONG" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow choke="0.3" color="#9eff5d" height="77.16" radius="49.8425" width="124.21" />
+         </effect>
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="22.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="115.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/pongcover.png" />
+               </image></ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="backBtn" alignment="TOP_CENTER" layoutX="489.0" layoutY="25.0" mnemonicParsing="false" onAction="#handle" prefHeight="33.0" prefWidth="86.0" style="-fx-background-color: hotpink;" text="BACK" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow choke="0.3" color="#ff1b6f" height="42.25" radius="25.9375" width="63.5" />
+         </effect>
+      </Button>
+      <Circle fill="#1f93ff00" layoutX="50.0" layoutY="47.0" radius="88.0" stroke="#81ffbe" strokeType="INSIDE" strokeWidth="10.0">
+         <effect>
+            <Glow level="0.75" />
+         </effect>
+      </Circle>
+      <Circle fill="#c13cff" layoutX="38.0" layoutY="36.0" radius="59.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <effect>
+            <Glow level="0.53" />
+         </effect>
+      </Circle>
+      <Polygon fill="#5ee4ff" layoutX="154.0" layoutY="24.0" rotate="-139.4" stroke="TRANSPARENT" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+      </Polygon>
+      <Polygon fill="#ffd51f" layoutY="380.0" rotate="-48.4" stroke="TRANSPARENT" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+         <effect>
+            <Glow level="0.59" />
+         </effect>
+      </Polygon>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1f84" height="33.0" layoutX="50.0" layoutY="370.0" stroke="TRANSPARENT" strokeType="INSIDE" width="86.0">
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff5121" height="33.0" layoutX="543.0" layoutY="370.0" stroke="TRANSPARENT" strokeType="INSIDE" width="86.0">
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Rectangle>
+      <Circle fill="#1f93ff00" layoutX="14.0" layoutY="334.0" radius="43.0" stroke="#ff82a2" strokeType="INSIDE" strokeWidth="10.0">
+         <effect>
+            <Glow level="0.75" />
+         </effect>
+      </Circle>
+      <Circle fill="#1f93ff00" layoutX="599.0" layoutY="344.0" radius="43.0" stroke="#82ff89" strokeType="INSIDE" strokeWidth="10.0">
+         <effect>
+            <Glow level="0.75" />
+         </effect>
+      </Circle>
+   </children>
+</AnchorPane>

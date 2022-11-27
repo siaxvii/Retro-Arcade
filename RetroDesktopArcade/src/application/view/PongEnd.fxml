@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.PongEndController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="410.0" layoutX="-8.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="617.0">
+         <fill>
+            <LinearGradient endX="0.8798076923076924" endY="1.0" startX="0.8701923076923077" startY="0.3653846153846154">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#0b0b75" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button fx:id="restartBtn" alignment="CENTER" layoutX="240.0" layoutY="260.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: white;" text="PLAY AGAIN">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="16.0" />
+         </font>
+         <effect>
+            <Glow level="0.33" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Button fx:id="backBtn" alignment="CENTER" layoutX="240.0" layoutY="317.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: white;" text="MAIN MENU">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="16.0" />
+         </font>
+         <effect>
+            <Glow level="0.33" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <ImageView fitHeight="50.0" fitWidth="267.0" layoutX="167.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/PongEndTitle.png" />
+         </image>
+      </ImageView>
+      <Polygon fill="#1f93ff00" layoutY="14.0" rotate="-77.5" stroke="#36f5dbe7" strokeType="INSIDE" strokeWidth="10.0">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+         <effect>
+            <Glow level="0.35" />
+         </effect>
+      </Polygon>
+      <Polygon fill="#1f93ff00" layoutX="89.0" layoutY="24.0" rotate="130.6" stroke="#f7fffee8" strokeType="INSIDE" strokeWidth="10.0">
+         <effect>
+            <Glow level="0.35" />
+         </effect>
+         <points>
+            <Double fx:value="-50.0" />
+            <Double fx:value="40.0" />
+            <Double fx:value="50.0" />
+            <Double fx:value="40.0" />
+            <Double fx:value="0.0" />
+            <Double fx:value="-60.0" />
+         </points>
+      </Polygon>
+      <Polygon fill="#1f93ff00" layoutX="-8.0" layoutY="107.0" rotate="-150.5" stroke="#340da8e8" strokeType="INSIDE" strokeWidth="10.0">
+         <effect>
+            <Glow level="0.35" />
+         </effect>
+         <points>
+            <Double fx:value="-50.0" />
+            <Double fx:value="40.0" />
+            <Double fx:value="50.0" />
+            <Double fx:value="40.0" />
+            <Double fx:value="0.0" />
+            <Double fx:value="-60.0" />
+         </points>
+      </Polygon>
+      <Polygon fill="#1f93ff00" layoutX="577.0" layoutY="24.0" stroke="#f7fffee8" strokeType="INSIDE" strokeWidth="10.0">
+         <effect>
+            <Glow level="0.35" />
+         </effect>
+         <points>
+            <Double fx:value="-50.0" />
+            <Double fx:value="40.0" />
+            <Double fx:value="50.0" />
+            <Double fx:value="40.0" />
+            <Double fx:value="0.0" />
+            <Double fx:value="-60.0" />
+         </points>
+      </Polygon>
+      <Polygon fill="#1f93ff00" layoutX="600.0" layoutY="74.0" rotate="-161.6" stroke="#36f5dbe7" strokeType="INSIDE" strokeWidth="10.0">
+         <effect>
+            <Glow level="0.35" />
+         </effect>
+         <points>
+            <Double fx:value="-50.0" />
+            <Double fx:value="40.0" />
+            <Double fx:value="50.0" />
+            <Double fx:value="40.0" />
+            <Double fx:value="0.0" />
+            <Double fx:value="-60.0" />
+         </points>
+      </Polygon>
+      <Polygon fill="#1f93ff00" layoutX="517.0" layoutY="14.0" rotate="149.2" stroke="#340da8e8" strokeType="INSIDE" strokeWidth="10.0">
+         <effect>
+            <Glow level="0.35" />
+         </effect>
+         <points>
+            <Double fx:value="-50.0" />
+            <Double fx:value="40.0" />
+            <Double fx:value="50.0" />
+            <Double fx:value="40.0" />
+            <Double fx:value="0.0" />
+            <Double fx:value="-60.0" />
+         </points>
+      </Polygon>
+      <Circle fill="WHITE" layoutX="45.0" layoutY="120.0" radius="7.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <effect>
+            <Glow level="0.45" />
+         </effect>
+      </Circle>
+      <Circle fill="WHITE" layoutX="89.0" layoutY="73.0" radius="14.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <effect>
+            <Glow level="0.64" />
+         </effect>
+      </Circle>
+      <Circle fill="WHITE" layoutX="487.0" layoutY="44.0" radius="14.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <effect>
+            <Glow level="0.64" />
+         </effect>
+      </Circle>
+      <Circle fill="WHITE" layoutX="580.0" layoutY="158.0" radius="11.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <effect>
+            <Glow level="0.64" />
+         </effect>
+      </Circle>
+      <Circle fill="WHITE" layoutX="494.0" layoutY="134.0" radius="7.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <effect>
+            <Glow level="0.64" />
+         </effect>
+      </Circle>
+      <Text fx:id="p1NameTxt" fill="WHITE" layoutX="75.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1" textAlignment="CENTER" wrappingWidth="215.0">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="p2NameTxt" fill="WHITE" layoutX="310.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2" textAlignment="CENTER" wrappingWidth="215.0">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="p1Score" fill="WHITE" layoutX="75.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" textAlignment="CENTER" wrappingWidth="215.0">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="44.0" />
+         </font>
+      </Text>
+      <Text fx:id="p2Score" fill="WHITE" layoutX="310.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" textAlignment="CENTER" wrappingWidth="215.0">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="44.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="260.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" textAlignment="CENTER" wrappingWidth="80.0">
+         <font>
+            <Font name="Silom" size="44.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

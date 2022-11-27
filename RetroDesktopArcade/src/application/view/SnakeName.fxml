@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: palegreen;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.SnakeNameController">
+   <children>
+      <Ellipse fill="#ba1eb200" layoutX="536.0" layoutY="340.0" radiusX="45.0" radiusY="47.0" stroke="#ffb82b" strokeType="INSIDE" strokeWidth="10.0">
+         <effect>
+            <Glow level="0.74" />
+         </effect>
+      </Ellipse>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#46a5ff" height="202.0" layoutX="-15.0" layoutY="299.0" stroke="TRANSPARENT" strokeType="INSIDE" width="137.0">
+         <effect>
+            <Glow level="0.63" />
+         </effect>
+      </Rectangle>
+      <Ellipse fill="#ba1eb200" layoutX="25.0" layoutY="37.0" radiusX="54.0" radiusY="68.0" stroke="#ff294e" strokeType="INSIDE" strokeWidth="10.0">
+         <effect>
+            <Glow level="0.74" />
+         </effect>
+      </Ellipse>
+      <Button fx:id="nextBtn" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="232.0" layoutY="299.0" mnemonicParsing="false" onAction="#handle" prefHeight="33.0" prefWidth="137.0" style="-fx-background-color: skyblue;" text="NEXT" textAlignment="CENTER" textFill="#fffb00" wrapText="true">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="26.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.54" color="#3084e5" height="57.43" radius="37.3225" width="93.86" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Polygon fill="#8fff1f" layoutX="118.0" layoutY="306.0" stroke="TRANSPARENT" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+         <effect>
+            <Glow level="0.73" />
+         </effect>
+      </Polygon>
+      <Ellipse fill="#1f93ff00" layoutX="131.0" layoutY="397.0" radiusX="45.0" radiusY="44.0" stroke="#eb3737" strokeType="INSIDE" strokeWidth="9.0">
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+      </Ellipse>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cd7620" height="72.0" layoutX="491.0" layoutY="-17.0" stroke="TRANSPARENT" strokeType="INSIDE" width="160.0">
+         <effect>
+            <Glow level="0.63" />
+         </effect>
+      </Rectangle>
+      <Ellipse fill="#1705ff" layoutX="14.0" layoutY="31.0" radiusX="26.0" radiusY="24.0" stroke="#7429ff00" strokeType="INSIDE" strokeWidth="10.0">
+         <effect>
+            <Glow level="0.74" />
+         </effect>
+      </Ellipse>
+      <Ellipse fill="#ba1eb200" layoutX="600.0" layoutY="68.0" radiusX="54.0" radiusY="54.0" stroke="#2bdfff" strokeType="INSIDE" strokeWidth="10.0">
+         <effect>
+            <Glow level="0.74" />
+         </effect>
+      </Ellipse>
+      <Ellipse fill="#ba1eb200" layoutY="318.0" radiusX="54.0" radiusY="54.0" stroke="#ff29bc" strokeType="INSIDE" strokeWidth="10.0">
+         <effect>
+            <Glow level="0.74" />
+         </effect>
+      </Ellipse>
+      <Polyline fill="#47f7ff" layoutX="94.0" layoutY="4.0" rotate="-85.6" stroke="WHITE" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="-40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="-40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="60.0" />
+          <Double fx:value="-50.0" />
+          <Double fx:value="-40.0" />
+        </points>
+         <effect>
+            <Glow level="0.63" />
+         </effect>
+      </Polyline>
+      <Ellipse fill="#77ff05" layoutX="545.0" layoutY="340.0" radiusX="26.0" radiusY="24.0" stroke="#7429ff00" strokeType="INSIDE" strokeWidth="10.0">
+         <effect>
+            <Glow level="0.74" />
+         </effect>
+      </Ellipse>
+      <Polyline fill="#ff2172" layoutX="623.0" layoutY="308.0" rotate="92.1" stroke="#ffffff00" strokeType="INSIDE">
+         <effect>
+            <Glow level="0.76" />
+         </effect>
+         <points>
+            <Double fx:value="-50.0" />
+            <Double fx:value="-40.0" />
+            <Double fx:value="50.0" />
+            <Double fx:value="-40.0" />
+            <Double fx:value="0.0" />
+            <Double fx:value="60.0" />
+            <Double fx:value="-50.0" />
+            <Double fx:value="-40.0" />
+         </points>
+      </Polyline>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7633ff" height="48.0" layoutX="561.0" layoutY="362.0" stroke="TRANSPARENT" strokeType="INSIDE" width="100.0">
+         <effect>
+            <Glow level="0.48" />
+         </effect>
+      </Rectangle>
+      <TextArea fx:id="name" layoutX="179.0" layoutY="164.0" prefHeight="48.0" prefWidth="239.0" promptText="Enter Name Here" wrapText="true">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </TextArea>
+      <Text fx:id="authenticate" fill="#c31e1e" layoutX="146.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="305.0">
+         <font>
+            <Font name="Silom" size="31.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="88.0" fitWidth="426.0" layoutX="88.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/SnakeNameTitle.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
