@@ -22,7 +22,7 @@ Retro Desktop Arcade consists of the two popular retro games Snake and Pong, con
     
 ## Contributors
 
-Lasya Yakkala
-Leeza Mushtaq
-Xander Wilson
+Lasya Yakkala\
+Leeza Mushtaq\
+Xander Wilson\
 Alex Lemire
