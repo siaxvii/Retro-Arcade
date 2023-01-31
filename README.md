@@ -1,6 +1,8 @@
-## Retro Desktop Arcade
+## [Retro Desktop Arcade](https://www.youtube.com/watch?v=yU9HtyS0CTo)
 
-Retro Desktop Arcade consists of the two popular retro games Snake and Pong, condensed into an easy to access application for those who want to relieve stress or play some low commitment games to pass the time.
+[Retro Desktop Arcade](https://www.youtube.com/watch?v=yU9HtyS0CTo) consists of the two popular retro games Snake and Pong, condensed into an easy to access application for those who want to relieve stress or play some low commitment games to pass the time.
+
+Watch video demo [here](https://www.youtube.com/watch?v=yU9HtyS0CTo)!
 
 ## Known Issues
 
